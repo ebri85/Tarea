@@ -4,5 +4,12 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+<servlet>
+    <servlet-name>App</servlet-name>
     
+</servlet>
+    <servlet-mapping>
+        <servlet-name>App</servlet-name>
+        <url-pattern>/recetas/*</url-pattern>
+    </servlet-mapping>
 </web-app>

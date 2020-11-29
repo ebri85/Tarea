@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Recetario:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Recetario</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Recetario-1.war">
+      <element id="artifact" artifact-name="Recetario:war exploded" />
+    </root>
+  </artifact>
+</component>

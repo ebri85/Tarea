@@ -1,22 +1,27 @@
 package com.recetario.modelo;
 
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Receta {
 
     private int idReceta;
     private int idTipoReceta;
     private String descripcion;
     private boolean disponible;
+    private String[] ingredientes;
 
     public Receta() {
 
     }
 
-    public Receta(int idReceta, int idTipoReceta, String descripcion, boolean disponible) {
+    public Receta(int idReceta, int idTipoReceta, String descripcion, boolean disponible,String[] ingredientes) {
         this.idReceta = idReceta;
         this.idTipoReceta = idTipoReceta;
         this.descripcion = descripcion;
         this.disponible = disponible;
+        this.ingredientes = ingredientes;
     }
 
     public int getIdReceta() {
@@ -51,6 +56,14 @@ public class Receta {
         this.disponible = disponible;
     }
 
+    public String[] getIngredientes() {
+        return ingredientes;
+    }
+
+    public void setIngredientes(String[] ingredientes) {
+        this.ingredientes = ingredientes;
+    }
+
     @Override
     public String toString() {
         return "Receta{" +
@@ -58,6 +71,7 @@ public class Receta {
                 ", idTipoReceta=" + idTipoReceta +
                 ", descripcion='" + descripcion + '\'' +
                 ", disponible=" + disponible +
+                ", ingredientes=" + Arrays.toString(ingredientes) +
                 '}';
     }
 }

@@ -18,6 +18,21 @@ import java.util.List;
 //      Jsonb jsonB = JsonbBuilder.create();
 //        String jsonListReceta = jsonB.toJson(this.recetas);
 
+/*Formato Json
+{
+    "idReceta": 1,
+    "idTipoReceta": 1,
+    "descripcion": "Tres Leches",
+    "disponible": false,
+		"ingredientes":
+		[
+			"leche",
+			"huevo"
+		]
+}
+
+* */
+
 @Path("/recetario")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
